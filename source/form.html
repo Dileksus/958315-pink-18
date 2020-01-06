@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,10 +11,9 @@
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Приложение 'Пинк'">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle-open" type="button">Открыть меню</button>
-        <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
+        <button class="toggle" type="button">Открыть/закрыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list sitegefooterlogo-htmlacademy))_fo-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="">Главная</a>
             </li>
@@ -34,6 +34,109 @@
       <section class="intro">
         <h2 class="intro__title">PINK - конкурс</h2>
         <p class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">Опросник</h2>
+        <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__person">
+            <label>Фамилия: <input type="text" name="surname" value="Укажите фамилию *" required></label>
+            <label>Имя: <input type="text" name="name" value="Введите ваше имя *" required></label>
+            <label>Отчество: <input type="text" name="middlename" value="Ну и отчество тоже"></label>
+          </div>
+          <div class="form__achiev checkbox">
+            <fieldset>
+              <legend>Ваши безбашенные достижения в путешествии?</legend>
+              <ul class="checkbox__list">
+                <li class="checkbox__item">
+                  <label>
+                    <input type="checkbox" name="selfie" class="visually-hidden" checked>
+                    <span class="checkbox__indicator"></span>
+                    Сделал селфи с акулой
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label>
+                    <input type="checkbox" name="charred" class="visually-hidden" checked>
+                    <span class="checkbox__indicator"></span>
+                    Обгорел на пляже
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label>
+                    <input type="checkbox" name="сhuck" class="visually-hidden">
+                    <span class="checkbox__indicator"></span>
+                    Видел Чака Норриса
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label>
+                    <input type="checkbox" name="souvenir" class="visually-hidden">
+                    <span class="checkbox__indicator"></span>
+                    Накупил сувениров
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label>
+                    <input type="checkbox" name="tower" class="visually-hidden" checked>
+                    <span class="checkbox__indicator"></span>
+                    Удержал башню
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label>
+                    <input type="checkbox" name="hotel" class="visually-hidden">
+                    <span class="checkbox__indicator"></span>
+                    Разгромил отель
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__contacts">
+            <fieldset>
+              <legend>Контактная информация?</legend>
+              <label>Номер телефона<input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Номер, пожалуйста"></label>
+              <label>Адрес почты<input type="email" name="email" value="Введите почту *" required></label>
+            </fieldset>
+          </div>
+          <div class="form__app radiobutton">
+            <fieldset>
+              <legend>С каким приложением путешествовали?</legend>
+              <ul class="radiobutton__list">
+                <li class="radiobutton__item">
+                  <label>
+                    <input type="radio" name="ios" value="ios" class="visually-hidden">
+                    <span class="radiobutton__indicator"></span>
+                    Pink для iOS
+                  </label>
+                </li>
+                <li class="radiobutton__item">
+                  <label>
+                    <input type="radio" name="android" value="android" class="visually-hidden">
+                    <span class="radiobutton__indicator"></span>
+                    Pink на Android
+                  </label>
+                </li>
+                <li class="radiobutton__item">
+                  <label>
+                    <input type="radio" name="windows" value="windows" class="visually-hidden">
+                    <span class="radiobutton__indicator"></span>
+                    Windows Phone
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__textarea">
+            <fieldset>
+              <legend>Опишите свои эмоции</legend>
+            <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь выражениях</textarea>
+            </fieldset>
+          </div>
+          <input class="form__button" type="submit" value="Отправить форму">
+          <p class="form__warning"><span>*</span> — обязательные поля</p>
+        </form>
       </section>
     </main>
     <footer class="page-footer">

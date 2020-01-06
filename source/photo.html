@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,10 +11,9 @@
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Приложение 'Пинк'">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle-open" type="button">Открыть меню</button>
-        <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
+        <button class="toggle" type="button">Открыть/закрыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list sitegefooterlogo-htmlacademy))_fo-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="">Главная</a>
             </li>
@@ -39,84 +39,134 @@
         <h2 class="visually-hidden">Примеры фотографий</h2>
         <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="photo__list photo-list">
-          <li class="photo_list__item">
-            <img class="photo_list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Анна">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Анна">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Анна
                 <span>(5 минут назад)</span>
               </p>
               <p class="item-block__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 215</p>
             </div>
           </li>
-          <li class="photo_list__item">
-            <img class="photo_list__item-image panorama" src="https://via.placeholder.com/150x150" alt="Фотография-Панорама Дня Левон">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image panorama" src="https://via.placeholder.com/150x150" alt="Фотография-Панорама Дня Левон">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Левон
                 <span>(5 часов назад)</span>
               </p>
               <p class="item-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 356</p>
             </div>
           </li>
-          <li class="photo_list__item">
-            <img class="photo_list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Антон">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Антон">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Антон
                 <span>(12 часов назад)</span>
               </p>
               <p class="item-block__text">Соседи будут рады!</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 666</p>
             </div>
           </li>
-          <li class="photo_list__item">
-            <img class="photo_list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Борис">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Борис">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Борис
                 <span>(20 часов назад)</span>
               </p>
               <p class="item-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 215</p>
             </div>
           </li>
-          <li class="photo_list__item">
-            <img class="photo_list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Сергей">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Сергей">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Сергей
                 <span>(25 часов назад)</span>
               </p>
               <p class="item-block__text">Самая кубанская в мире!</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 4</p>
             </div>
           </li>
-          <li class="photo_list__item">
-            <img class="photo_list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Максим">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Максим">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Максим
                 <span>(40 часов назад)</span>
               </p>
               <p class="item-block__text">Где снег-то?</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 150</p>
             </div>
           </li>
-          <li class="photo_list__item">
-            <img class="photo_list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Надежда">
-            <div class="photo_list__item item-block">
+          <li class="photo-list__item">
+            <img class="photo-list__item-image" src="https://via.placeholder.com/150x150" alt="Фотография Надежда">
+            <div class="photo-list__item item-block">
               <p class="item-block__name">
                 Надежда
                 <span>(45 часов назад)</span>
               </p>
               <p class="item-block__text">Всем GM и взаимные лайки!</p>
+              <button class="item-block__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
               <p class="item-block__likes">Нравится: 2560</p>
             </div>
           </li>
         </ul>
+      </section>
+      <section class="photo-load">
+        <div class="photo-load__wrapper">
+          <h2 class="visually-hidden">Загрузить изображение</h2>
+          <div class="photo-load__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
+          <form class="photo-load__form load-form" action="https://echo.htmlacademy.ru" method="post">
+            <img class="load-form__image" src="https://via.placeholder.com/150x150" alt="Загруженная фотография">
+            <div class="load-form__tools">
+              <div class="load-form__crop">
+                <svg></svg>
+                <span class="visually-hidden">Кадрировать</span>
+              </div>
+              <div class="load-form__pour">
+                <svg></svg>
+                <span class="visually-hidden">Залить</span>
+              </div>
+              <div class="load-form__contrast">
+                <svg></svg>
+                <span class="visually-hidden">Контрастность</span>
+              </div>
+              <div class="load-form__scale scale">
+                <div class="scale__bar"></div>
+                <div class="scale__toggle"></div>
+              </div>
+            </div>
+            <input class="load-form__button load-form__button--post" type="submit" value="Запостить">
+            <input class="load-form__button load-form__button--cancel" type="reset" value="Отмена">
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
