@@ -3,7 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "pixelglass/mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("pixelglass/tablet.png");
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 960px ) {
+        HTML {
+
+          /* Десктопный макет */
+          background-image: url( "pixelglass/desktop.png" );
+
+        }
+      }
+
+      BODY {
+        opacity: .3;
+      }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
@@ -181,7 +213,7 @@
         <p class="contacts__appeal">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__number">Звоните<span>+7 (812) 555-66-66</span></p>
         <p class="contacts__email">Пишите<span>mail@htmlacademy.ru</span></p>
-        <p class="contacts__address">Приезжайте в гости<span>ул. Большая Конюшенная, 19/8</span></p>
+        <p class="contacts__address">Приезжайте в гости <span>ул. Большая Конюшенная, 19/8</span></p>
       </section>
     </main>
   </body>
