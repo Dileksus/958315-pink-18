@@ -2,49 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <style>
       HTML {
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию мобильный макет */
-        background-image: url( "pixelglass/mobile.png" );
+        background-image: url( "pixelglass/mobilemenu.png" );
       }
       /* Планшет */
-      @media ( min-width: 760px ) {
+      @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url("pixelglass/tablet.png");
+          background-image: url( "pixelglass/tabletmenu.png" );
         }
       }
       /* Десктоп */
-      @media ( min-width: 960px ) {
+      @media ( min-width: 1200px ) {
         HTML {
-
           /* Десктопный макет */
           background-image: url( "pixelglass/desktop.png" );
-
         }
       }
 
       BODY {
-        opacity: .3;
+        opacity: .5;
       }
     </style>
-    <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+<script src="../node_modules/pixel-glass/script.js"></script>
 
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
-    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Приложение'Пинк'">
-      </a>
-      <nav class="main-nav">
-        <button class="toggle" type="button">Открыть/закрыть меню</button>
-        <div class="main-nav__wrapper">
+      <div class="page-header__wrapper-main">
+        <div class="page-header__wrapper-head">
+          <a class="page-header__logo">
+             <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение'Пинк'">
+             </picture>
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="">Главная</a>
@@ -59,8 +64,8 @@
               <a href="">HTML ACADEMY</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="intro">
@@ -131,9 +136,9 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper slider">
+        <div class="price__wrapper">
           <h2 class="visually-hidden">Наши цены</h2>
-            <div class="price__list slider__list">
+            <div class="price__list">
                 <table class="price__item price-table">
                   <tr class="price-table__row">
                     <th class="price-table__head">База 1,99 USD</th>
@@ -177,7 +182,7 @@
                   </tr>
                 </table>
             </div>
-            <div class="price__list slider__list">
+            <div class="price__list">
               <table class="price__item price-table">
                 <tr class="price-table__row">
                   <th class="price-table__head">База 1,99 USD</th>
@@ -201,10 +206,10 @@
                 </tr>
               </table>
           </div>
-            <p class="price__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+            <p class="price__toggles">
+              <button class="price__toggle" type="button">1</button>
+              <button class="price__toggle" type="button">2</button>
+              <button class="price__toggle" type="button">3</button>
             </p>
         </div>
       </section>

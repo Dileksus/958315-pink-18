@@ -1,25 +1,32 @@
 @font-face {
   font-weight: normal;
-  font-family: "PT Sans Narrow";
+  font-family: "OpenSans";
   font-style: normal;
-  src: url("fonts/PTSansNarrow.woff2") format("woff2"), url("fonts/PTSansNarrow.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-weight: bold;
-  font-family: "PT Sans Narrow";
+  font-family: "OpenSans";
   font-style: normal;
-  src: url("fonts/PTSansNarrowBold.woff2") format("woff2"), url("fonts/PTSansNarrowBold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+
+@font-face {
+  font-weight: lighter;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-
   font-size: 18px;
-  line-height: 27px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
   color: black;
   font-style: normal;
 }
@@ -44,3 +51,19 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// body > * {
+//   background: rgba(255,0,0, 0.3);
+// }
+// body > * > * {
+//   background: rgba(14, 197, 230, 0.3);
+// }
+// body > * > * > *{
+//   background: rgba(0,255,0, 0.3);
+// }
+// body > * > * > * > *{
+//   background: rgba(93, 26, 119, 0.3);
+// }
+// body > * > * > * > * > * {
+//   background: rgba(184, 30, 176, 0.3);
+// }
